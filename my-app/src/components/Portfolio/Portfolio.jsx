@@ -1,21 +1,26 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Portfolio from '../../assets/portfolio.png'
 import Portfolio2 from '../../assets/portfolio2.png'
 import Portfolio3 from '../../assets/portfolio3.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Services = () => {
+  useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
   return (
     <div>
        <section className="bg-black py-12 px-4 hidden lg:block">
         <div className="headings flex flex-col text-center justify-center">
 
-        <h3 className='uppercase text-yellow-500 text-2xl'>Latest Portfolio</h3>
-        <h1 className='text-5xl font-bold text-white'>Transforming Ideas into Exceptional</h1>
-        <p className='text-lg text-gray-400 max-w-3xl text-center flex justify-center mx-auto mt-3 mb-7'>Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational</p>
+        <h3 data-aos="zoom-in" className='uppercase text-yellow-500 text-2xl'>Latest Portfolio</h3>
+        <h1 data-aos="fade-up" className='text-5xl font-bold text-white'>Transforming Ideas into Exceptional</h1>
+        <p data-aos="fade-up" className='text-lg text-gray-400 max-w-3xl text-center flex justify-center mx-auto mt-3 mb-7'>Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational</p>
         </div>
   <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     
     {/* Box 1 */}
-    <div className="relative overflow-hidden group rounded-md shadow-md cursor-pointer ">
+    <div data-aos="zoom-in" className="relative overflow-hidden group rounded-md shadow-md cursor-pointer ">
       <img
         src={Portfolio}
         alt="Service"
@@ -37,7 +42,7 @@ Designed with bold typography, animated buttons, and clean section layouts to en
     </div>
 
     {/* Box 2 */}
-    <div className="relative overflow-hidden group rounded-md shadow-md cursor-pointer text-[Rajdhani]">
+    <div data-aos="zoom-in" className="relative overflow-hidden group rounded-md shadow-md cursor-pointer text-[Rajdhani]">
       <img
         src={Portfolio2}
         alt="Service"
@@ -57,7 +62,7 @@ Integrated subtle hover animations to enhance user interaction and product exper
     </div>
 
     {/* Box 3 */}
-    <div className="relative overflow-hidden group rounded-md shadow-md cursor-pointer">
+    <div  data-aos="zoom-in" className="relative overflow-hidden group rounded-md shadow-md cursor-pointer">
       <img
         src={Portfolio3}
         alt="Service"

@@ -1,8 +1,14 @@
 // Navbar.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Navbar() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -13,24 +19,24 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 text-3xl font-bold text-[var(--primary-color)]">
+          <div  data-aos='zoom-in-right' className="Name flex-shrink-0 text-3xl font-bold text-[var(--primary-color)]">
             Sami
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <Link to="#" className="hover:text-[#FDC448] transition">
+            <a href="#" data-aos="zoom-out" className="hover:text-[#FDC448] transition">
               Home
-            </Link>
-            <Link to="#" className="hover:text-[#FDC448] transition">
+            </a>
+            <a href="#aboutcontainer" data-aos="zoom-out" className="hover:text-[#FDC448] transition">
               About
-            </Link>
-            <Link to="#" className="hover:text-[#FDC448] transition">
+            </a>
+            <a href="#services" data-aos="zoom-out" className="hover:text-[#FDC448] transition">
               Services
-            </Link>
-            <Link to="#" className="hover:text-[#FDC448] transition">
+            </a>
+            <a href="#contact" data-aos="zoom-out" className="hover:text-[#FDC448] transition">
               Contact
-            </Link>
+            </a>
        
      <a href="https://www.linkedin.com/in/muhammad-sami-b0814027a/"target='_blank'>
                 <p className="text-[#FDC448] text-3xl  transition">

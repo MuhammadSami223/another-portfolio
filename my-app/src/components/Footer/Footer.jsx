@@ -5,7 +5,7 @@ const Footer = () => {
   <div className="footer  bg-[#060606] px-20">
       <hr className='text-white pt-7'/>
       <div className="footer-container text-white text-center font-[Rajdhani] font-bold pb-5">
-            copyright 20224  Sami .All Right Reserved</div>
+            copyright 2025  Sami . All Right Reserved</div>
     </div>
   </div>
   )
