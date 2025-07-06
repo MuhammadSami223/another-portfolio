@@ -1,9 +1,32 @@
-import React from 'react'
+import React,{useRef}from 'react'
 import Bg from '../../assets/bg.png'
 import Boy from '../../assets/boy.jpeg'
 import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt'
+import Typed from 'typed.js';
+
 const Hero = () => {
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+       strings: [
+    "Frontend Developer",
+    "React.js Enthusiast",
+      "Crafting Responsive UI"
+
+  ],
+      typeSpeed: 90,
+      backSpeed: 50,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div>
       <section className="bg-[var(--bg-color)] py-20 px-6 sm:px-10 relative">
@@ -11,16 +34,18 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
 
           {/* Left Content (Text) */}
-          <div className="w-full md:w-1/2 space-y-6">
+          <div className="w-full md:w-1/2 space-y-5 ">
             
             <motion.h2
+            ref={el}
+
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="text-2xl sm:text-4xl text-[var(--primary-color)] font-bold"
               style={{ fontFamily: 'var(--heading-font)' }}
             >
-              Web Developer
+              
             </motion.h2>
 
             <motion.h1

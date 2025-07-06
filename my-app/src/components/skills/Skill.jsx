@@ -28,7 +28,8 @@ const Skill = () => {
             <p  data-aos="zoom-out-up" className="text-gray-300 text-[17px] font-semibold max-w-3xl">Business consulting consultants provide expert advice and guida busi nesses to help them improve their performance, efficiency, and organ izational Business consulting consultants provide</p>
         </div>
         <div className="skill-box-conatiner">
-        <div className="flex flex-wrap justify-center gap-4 items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-2 mt-10 font-[Rajdhani] items-center lg:px-10">
+
           <Tilt>
 
   <div data-aos="zoom-in" data-aos-delay="600" className="w-[145px] md:w-[200px] h-[150px] bg-transparent border-2 rounded-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 hover:bg-gradient-to-br hover:from-[#a58f4c] hover:to-[#a87b2e] hover:shadow-xl hover:shadow-yellow-300/30 "

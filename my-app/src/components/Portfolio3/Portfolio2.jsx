@@ -6,7 +6,7 @@ const Portfolio2 = () => {
   return (
     <div>
       <section className=" bg-black py-10">
-         <div className="headings flex flex-col text-center justify-center">
+         <div className="headings flex flex-col text-center justify-center font-[Rajdhani]">
 
         <h3 data-aos="zoom-in" className='uppercase text-yellow-500 text-2xl '>Latest Portfolio</h3>
         <h1 data-aos="fade-up" className='text-5xl font-bold text-white'>Transforming Ideas into Exceptional</h1>
