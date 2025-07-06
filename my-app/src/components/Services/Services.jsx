@@ -9,8 +9,8 @@ const Services = () => {
   }, []);
   return (
     <div id="services">
-      <div className="service-container px-6 md:px-10 lg:px-20 bg-black py-6">
-        <h1 className="text-4xl font-bold text-[#FDC448] text-center">
+      <div className="service-container px-6 md:px-10 lg:px-20 bg-black py-6 pt-10">
+        <h1 className="Name tracking-wider text-5xl font-bold text-[#FDC448] text-center">
           Services
         </h1>
 

@@ -9,7 +9,7 @@ import Contact from './components/Contact/Contact'
 import Portfolio from './components/Portfolio/Portfolio'
 import Services from './components/Services/Services'
 import Footer from './components/Footer/Footer'
-
+import Portfolio2 from './components/Portfolio3/portfolio2'
 const App = () => {
   return (
     <div className=''>
@@ -19,7 +19,8 @@ const App = () => {
       <About/>
       <Services/>
       <Skill/>
-      <Portfolio/>
+      {/* <Portfolio/> */}
+      <Portfolio2/>
       <Contact/>
       <Footer/>
     </div>

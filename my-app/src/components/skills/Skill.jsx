@@ -23,7 +23,7 @@ const Skill = () => {
         <div className="skill-container px-10 py-9  space-y-10 bg-[#141414] rounded-4xl">
           {/* left content */}
         <div className="headings font-bold flex flex-col gap-2 ">
-            <h3  data-aos="zoom-out-up" className="text-2xl text-[#FDC448] uppercase">My Skill</h3>
+            <h3  data-aos="zoom-out-up" className="text-2xl text-[#FDC448] uppercase ">My SKILL</h3>
             <h1  data-aos="zoom-out-up" className="text-4xl font-bold ">My Experts Areas Where I Gained Skill</h1>
             <p  data-aos="zoom-out-up" className="text-gray-300 text-[17px] font-semibold max-w-3xl">Business consulting consultants provide expert advice and guida busi nesses to help them improve their performance, efficiency, and organ izational Business consulting consultants provide</p>
         </div>

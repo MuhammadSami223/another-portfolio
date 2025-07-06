@@ -70,14 +70,14 @@ const Contact = () => {
   <form className="contact-form mt-6" ref={form} onSubmit={sendEmail}>
     {/* Row 1: Name + Phone */}
     <div data-aos="fade-up" className="flex flex-col lg:flex-row gap-5 mb-5">
-      <input type="text" placeholder="Your Name" className="flex-1 h-[60px] border rounded-xl p-3 w-full" name="user_name"/>
-      <input type="text" placeholder="Your Email" className="flex-1 h-[60px] border rounded-xl p-3 w-full" name="user_email"/>
+      <input type="text" placeholder="Your Name" className="flex-1 h-[60px] border rounded-xl p-3 w-full" name="user_name" required/>
+      <input type="text" placeholder="Your Email" className="flex-1 h-[60px] border rounded-xl p-3 w-full" name="user_email" required/>
     </div>
 
     {/* Row 2: Email + Subject */}
     <div data-aos="fade-up" className="flex flex-col lg:flex-row gap-5 mb-5">
-      <input type="text" placeholder="Your Phone " className="flex-1 h-[60px] border rounded-xl p-3 w-full" name="user_phone" />
-      <input type="text" placeholder="Subject" className="flex-1 h-[60px] border rounded-xl p-3 w-full" name='user_subject'/>
+      <input type="text" placeholder="Your Phone " className="flex-1 h-[60px] border rounded-xl p-3 w-full" name="user_phone"  required/>
+      <input type="text" placeholder="Subject" className="flex-1 h-[60px] border rounded-xl p-3 w-full" name='user_subject' required/>
     </div>
 
     {/* Row 3: Message */}

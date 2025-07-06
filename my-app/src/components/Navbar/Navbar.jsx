@@ -65,18 +65,18 @@ export default function Navbar() {
         {/* Mobile Menu Dropdown */}
         {isOpen && (
           <div className="md:hidden mt-2 space-y-2 pb-4">
-            <Link to="#" className="block hover:text-blue-400">
+            <a href="#" className="block hover:text-blue-400">
               Home
-            </Link>
-            <Link to="#" className="block hover:text-blue-400">
+            </a>
+            <a href="#aboutcontainer" className="block hover:text-blue-400">
               About
-            </Link>
-            <Link to="#" className="block hover:text-blue-400">
+            </a>
+            <a href="#services" className="block hover:text-blue-400">
               Services
-            </Link>
-            <Link to="#" className="block hover:text-blue-400">
+            </a>
+            <a href="#contact" className="block hover:text-blue-400">
               Contact
-            </Link>
+            </a>
           </div>
         )}
       </div>

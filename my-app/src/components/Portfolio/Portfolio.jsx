@@ -13,7 +13,7 @@ const Services = () => {
        <section className="bg-black py-12 px-4 hidden lg:block">
         <div className="headings flex flex-col text-center justify-center">
 
-        <h3 data-aos="zoom-in" className='uppercase text-yellow-500 text-2xl'>Latest Portfolio</h3>
+        <h3 data-aos="zoom-in" className='uppercase text-yellow-500 text-2xl Name'>Latest Portfolio</h3>
         <h1 data-aos="fade-up" className='text-5xl font-bold text-white'>Transforming Ideas into Exceptional</h1>
         <p data-aos="fade-up" className='text-lg text-gray-400 max-w-3xl text-center flex justify-center mx-auto mt-3 mb-7'>Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational</p>
         </div>
